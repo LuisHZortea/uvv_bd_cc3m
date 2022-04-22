@@ -67,7 +67,7 @@ COMMENT ON COLUMN departamento.cpf_gerente IS 'CPF do gerente do departamento. �
 COMMENT ON COLUMN departamento.data_inicio_gerente IS 'Data do início do gerente no departamento.';
 
 
-CREATE UNIQUE INDEX nome_departamentoak
+CREATE UNIQUE INDEX departamento_idx
  ON departamento
  ( nome_departamento );
 
@@ -85,7 +85,7 @@ COMMENT ON COLUMN projeto.local_projeto IS 'Localização do projeto.';
 COMMENT ON COLUMN projeto.numero_departamento IS 'Número do departamento. É uma FK para a tabela departamento.';
 
 
-CREATE UNIQUE INDEX nome_projetoak
+CREATE UNIQUE INDEX projeto_idx
  ON projeto
  ( nome_projeto );
 
