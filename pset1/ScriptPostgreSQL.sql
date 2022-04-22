@@ -60,7 +60,7 @@ CREATE TABLE departamento (
                 data_inicio_gerente DATE,
                 CONSTRAINT departamento_pk PRIMARY KEY (numero_departamento)
 );
-COMMENT ON TABLE departamento IS 'Tabela que armazena as informaço?s dos departamentos.';
+COMMENT ON TABLE departamento IS 'Tabela que armazena as informações dos departamentos.';
 COMMENT ON COLUMN departamento.numero_departamento IS 'Número do departamento. É a PK desta tabela.';
 COMMENT ON COLUMN departamento.nome_departamento IS 'Nome do departamento. Deve ser único.';
 COMMENT ON COLUMN departamento.cpf_gerente IS 'CPF do gerente do departamento. É uma FK para a tabela funcionários.';
