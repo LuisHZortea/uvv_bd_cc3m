@@ -4,7 +4,7 @@ computacao@raiz
 CREATEUSER luis -dPs
 123
 123
-computacaoraiz
+computacao@raiz
 
 psql
 computacao@raiz
