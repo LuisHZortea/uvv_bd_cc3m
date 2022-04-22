@@ -18,8 +18,6 @@ CREATE DATABASE uvv
     LC_CTYPE = 'pt_BR.UTF-8'
     ALLOW_CONNECTIONS = TRUE;
 
-exit
-
 \c uvv luis;
 
 CREATE SCHEMA elmasri
