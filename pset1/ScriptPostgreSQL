@@ -1,15 +1,13 @@
 psql -U postgres
 computacao@raiz
 
-CREATE ROLE luis WITH
-	LOGIN
-	SUPERUSER
-	CREATEDB
-	CREATEROLE
-	INHERIT
-	NOREPLICATION
-	CONNECTION LIMIT -1
-	PASSWORD 'luis';
+CREATEUSER luis -dPs
+123
+123
+computacaoraiz
+
+psql
+computacao@raiz
 
 CREATE DATABASE uvv
     WITH 
@@ -22,7 +20,7 @@ CREATE DATABASE uvv
 
 exit
 
-psql -U luis uvv
+\c uvv luis;
 
 CREATE SCHEMA elmasri
     AUTHORIZATION luis;
@@ -215,7 +213,6 @@ VALUES ('ProdutoX', 1, 'Santo André', 5),
 ('Reorganização', 20, 'São Paulo', 1),
 ('Novosbeneficios', 30, 'Mauá', 4);
 
-
 INSERT INTO dependente (cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES (33344555587, 'Alicia', 'F', '1986-04-05', 'Filha'),
 (33344555587, 'Tiago', 'M', '1983-10-25', 'Filho'),
@@ -224,7 +221,6 @@ VALUES (33344555587, 'Alicia', 'F', '1986-04-05', 'Filha'),
 (12345678966, 'Michael', 'M', '1988-01-04', 'Filho'),
 (12345678966, 'Alicia', 'F', '1988-12-30', 'Filha'),
 (12345678966, 'Elizabeth', 'F', '1967-05-05', 'Esposa');
-
 
 INSERT INTO trabalha_em (cpf_funcionario, numero_projeto, horas)
 VALUES (12345678966, 1, 32.5),
