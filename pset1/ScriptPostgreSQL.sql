@@ -1,3 +1,4 @@
+--[No Terminal Linux] - Esse é o primeiro passo, é a conexão ao SGBD Postgres, a criação do usuário, e a garantia de seus privilégios no banco de dados. 
 psql -U postgres
 computacao@raiz
 
@@ -9,6 +10,7 @@ computacao@raiz
 psql
 computacao@raiz
 
+--[Ainda no Terminal Linux] - O segundo passo é a criação do banco de dados "uvv".
 CREATE DATABASE uvv
     WITH 
     OWNER = luis
@@ -29,6 +31,7 @@ SET SEARCH_PATH TO elmasri, "$user", public;
 ALTER USER luis
 SET SEARCH_PATH TO elmasri, "$user", public;
 
+--[Ainda no Terminal Linux] - O terceiro passo é a implementação do projeto Elmasri feito no SQL Power Architect.
 CREATE TABLE funcionario (
                 cpf CHAR(11) NOT NULL,
                 primeiro_nome VARCHAR(15) NOT NULL,
@@ -177,6 +180,7 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
+--[Ainda no Terminal Linux] - O quarto e último passo é inserção dos dados no banco de dados.
 INSERT INTO funcionario (primeiro_nome, nome_meio, ultimo_nome, cpf, data_nascimento, endereco, sexo, salario, numero_departamento)
 VALUES ('Jorge', 'E', 'Brito', 88866555576, '1937-11-10', 'Rua do Horto, 35, São Paulo, SP', 'M', 55000, 1);
 
