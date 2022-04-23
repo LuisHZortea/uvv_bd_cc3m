@@ -1,7 +1,7 @@
 psql -U postgres
 computacao@raiz
 
-CREATEUSER luis -dPs
+createuser luis -dPs
 123
 123
 computacao@raiz
@@ -19,6 +19,7 @@ CREATE DATABASE uvv
     ALLOW_CONNECTIONS = TRUE;
 
 \c uvv luis;
+123
 
 CREATE SCHEMA elmasri
     AUTHORIZATION luis;
