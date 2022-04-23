@@ -1,4 +1,4 @@
---[No Terminal Linux] - Esse é o primeiro passo, é a criação do usuário, a garantia de seus privilégios no banco de dados, e a criação do banco de dados.
+--[No Terminal Linux] - Esse é o primeiro passo, é a conexão ao SGBD MariaDB/MYSQL, a criação do usuário, a garantia de seus privilégios no banco de dados, e a criação do banco de dados.
 mysql -u root -p
 computacao@raiz
 
