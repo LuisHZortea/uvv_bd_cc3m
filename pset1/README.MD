@@ -15,7 +15,7 @@
 
 ## Projeto Lógico
 
-> - O **_SQL Power Architect_**, previamente mencionando, foi de enorme ajuda, facilitou a criação de tabelas, permitindo inserir as informações necessárias com clareza, como também o relacionamento entre elas, e também a inserção comentários onde era devido. 
+> - O **_SQL Power Architect_**, previamente mencionando, foi de enorme ajuda, facilitou a criação de tabelas, permitindo inserir as informações necessárias com clareza, como também o relacionamento entre elas, e também a inserção de comentários onde era devido. 
 
 ![Projeto Lógico](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset1/imgs/ProjetoLógico.png)
 
