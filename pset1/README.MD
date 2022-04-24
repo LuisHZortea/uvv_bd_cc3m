@@ -1,6 +1,6 @@
 # PSet 1
 
-#### Aluno:Luis Henrique Gomes Zortea | #### Curso: Ciência da Computação | #### Turma: CC1M | #### Professor(a): Abrantes Araújo Silva Filho | #### Monitor(a): Suellen Miranda Amorim  
+#### Aluno:Luis Henrique Gomes Zortea | Curso: Ciência da Computação | Turma: CC1M | Professor(a): Abrantes Araújo Silva Filho | Monitor(a): Suellen Miranda Amorim  
 
 ## Visão Geral
 
