@@ -1,5 +1,3 @@
-# Design e Desenvolvimento de Banco de Dados
-
 <div align="center">
   
   # Design e Desenvolvimento de Banco de Dados
