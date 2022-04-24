@@ -1,4 +1,7 @@
 --[No Terminal Linux] - Esse é o primeiro passo, é a conexão ao SGBD Postgres, a criação do usuário, e a garantia de seus privilégios no banco de dados. 
+
+/*Atenção: Os comandos a seguir devem ser colocados no Terminal Linux separadamente para evitar possíveis erros. */
+
 psql -U postgres
 computacao@raiz
 
