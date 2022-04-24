@@ -21,3 +21,5 @@
 
 > - Além disso, o **_SQL Power Architect_** também possui um função de gerar o script do projeto lógico para a um tipo específico de Sistemas de Gerenciamento de Banco de Dados. Com isso, foi possível fazer a conversão para futuramente implementar no **PostgreSQL** e **MariaDB/MySQL**.
 
+![Conversão PostgreSQL](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset1/imgs/ConversãoPostgreSQL.png)
+![Conversão MySQL](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset1/imgs/ConversãoMySQL.png)
