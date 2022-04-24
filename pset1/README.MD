@@ -23,3 +23,7 @@
 
 ![Conversão PostgreSQL](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset1/imgs/ConversãoPostgreSQL.png)
 ![Conversão MySQL](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset1/imgs/ConversãoMySQL.png)
+
+## Considerações Finais
+
+- Após gastar bons dias quebrando a cabeça para resolver o PSet, agora fui capaz de compreender, mesmo que minimamente, o título de um dos livros de um aluno do Massachusetts Institute of Technology: Harbinger of Doom, Despair, and Knowledge: PSETS (“Arautos da Desgraça, Desespero e Conhecimento: PSETS”). As inúmeras dúvidas, as constantes tentativas frustradas por conta de um erro de digitação, e até a desistência momêntanea fizeram parte do meu processo de conclusão do PSet. Apesar do sofrimento momêntaneo, reconheço que o PSet tem um valor importante, já que às vezes me pego pensando nos comandos que utilizei e na forma como os utilizei, e parece que não irei os esquecer tão cedo.
