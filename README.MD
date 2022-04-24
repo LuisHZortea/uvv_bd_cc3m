@@ -1,7 +1,8 @@
-# Nome: Luis Henrique Gomes Zortea | Professor: Abrantes Araújo Silva Filho | Monitora: Suellen Miranda Amorim
+# Design e Desenvolvimento de Banco de Dados
 
 <div align="center">
   
+  # Design e Desenvolvimento de Banco de Dados
   ## Problem Set
 
 </div>
