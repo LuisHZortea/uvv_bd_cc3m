@@ -52,7 +52,7 @@ CREATE TABLE localizacoes_departamento (
                 primary key (numero_departamento, local)
 );
 
-ALTER TABLE localizacoes_departamento COMMENT 'abela que armazena as possíveis localizações dos departamentos.';
+ALTER TABLE localizacoes_departamento COMMENT 'Tabela que armazena as possíveis localizações dos departamentos.';
 
 
 CREATE TABLE projeto (
