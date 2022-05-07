@@ -11,3 +11,14 @@ group by d.nome_departamento;
 select avg(f.salario) as media_salarial, f.sexo
 from funcionario f
 group by f.sexo;
+
+--3ª Questão
+
+select d.nome_departamento,
+concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) as nome_funcionario,
+f.data_nascimento,
+timestampdiff (year, data_nascimento, curdate()) as idade,
+f.salario
+from departamento d
+inner join funcionario f
+on f.numero_departamento = d.numero_departamento;
