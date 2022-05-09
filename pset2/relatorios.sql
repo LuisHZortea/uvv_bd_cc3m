@@ -95,3 +95,24 @@ where f.numero_departamento = dpt.numero_departamento
 and p.numero_projeto = t.numero_projeto 
 and f.cpf = t.cpf_funcionario 
 order by p.numero_projeto;
+
+-- 9ª  Questão
+
+select dpt.nome_departamento Departamento, p.nome_projeto Projeto, sum(distinct(t.horas)) "Tempo Total"
+from trabalha_em t
+inner join funcionario f
+on t.cpf_funcionario = f.cpf
+inner join departamento dpt
+on f.numero_departamento = dpt.numero_departamento
+inner join projeto p
+on dpt.numero_departamento = p.numero_departamento
+group by p.nome_projeto;
+
+
+-- 10ª Questão
+
+select avg(f.salario) as media_salarial, d.nome_departamento
+from funcionario f
+inner join departamento d
+on d.numero_departamento = f.numero_departamento
+group by d.nome_departamento;
