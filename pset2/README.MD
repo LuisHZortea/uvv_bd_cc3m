@@ -66,14 +66,24 @@
 ### 11ª Questão
 > Considerando que o valor pago por hora trabalhada em um projeto é de 50 reais, prepare um relatório que mostre o nome completo do funcionário, o nome do projeto e o valor total que o funcionário receberá referente às horas trabalhadas naquele projeto.
 
+![Questão11](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset2/imgs/Questão11.png)
+
 ### 12ª Questão
 > Seu chefe está verificando as horas trabalhadas pelos funcionários nos projetos e percebeu que alguns funcionários, mesmo estando alocadas à algum projeto, não registraram nenhuma hora trabalhada. Sua tarefa é preparar um relatório que liste o nome do departamento, o nome do projeto e o nome dos funcionários que, mesmo estando alocados a algum projeto, não registraram nenhuma hora trabalhada.
+
+![Questão12](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset2/imgs/Questão12.png)
 
 ### 13ª Questão
 > Durante o natal deste ano a empresa irá presentear todos os funcionários e todos os dependentes (sim, a empresa vai dar um presente para cada funcionário e um presente para cada dependente de cada funcionário) e pediu para que você preparasse um relatório que listasse o nome completo das pessoas a serem presenteadas (funcionários e dependentes), o sexo e a idade em anos completos (para poder comprar um presente adequado). Esse relatório deve estar ordenado pela idade em anos completos, de forma decrescente.
 
+![Questão13](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset2/imgs/Questão13.png)
+
 ### 14ª Questão
 > Prepare um relatório que exiba quantos funcionários cada departamento tem.
 
+![Questão14](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset2/imgs/Questão14.png)
+
 ### 15ª Questão
 > Como um funcionário pode estar alocado em mais de um projeto, prepare um relatório que exiba o nome completo do funcionário, o departamento desse funcionário e o nome dos projetos em que cada funcionário está alocado. Atenção: se houver algum funcionário que não está alocado em nenhum projeto, o nome completo e o departamento também devem aparecer no relatório.
+
+![Questão15](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/pset2/imgs/Questão15.png)
