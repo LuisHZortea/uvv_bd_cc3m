@@ -8,7 +8,7 @@
 
 ## Visão Geral
 
-- **Esse *Problem Set* só é possível ser feito por meio da implementação e uso do PSet anterior.**
+- **Esse *Problem Set* só é possível ser feito por meio da implementação e uso do Banco de Dados do PSet anterior.**
 - Esse segundo PSet foi criado para testarmos nosso conhecimento sobre Álgrebra Relacional com o uso de comandos SQL.
 
 ## Questões/Relatórios
