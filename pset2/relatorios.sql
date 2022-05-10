@@ -108,7 +108,6 @@ inner join projeto p
 on dpt.numero_departamento = p.numero_departamento
 group by p.nome_projeto;
 
-
 -- 10ª Questão
 
 select avg(f.salario) as media_salarial, d.nome_departamento
@@ -116,3 +115,72 @@ from funcionario f
 inner join departamento d
 on d.numero_departamento = f.numero_departamento
 group by d.nome_departamento;
+
+-- 11ª Questão
+
+select concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) Funcionário, p.nome_projeto Projeto,
+case
+when t.horas > 0 then concat("R$", ' ', t.horas * 50)
+else "R$ 0.0"
+end "Total Recebido"
+from funcionario f
+inner join trabalha_em t
+on f.cpf = t.cpf_funcionario
+inner join projeto p
+on t.numero_projeto = p.numero_projeto
+order by t.horas desc;
+
+-- 12ª Questão
+
+select dpt.nome_departamento Departamento, p.nome_projeto Projeto,
+f.primeiro_nome Funcionário, concat(t.horas, "h") "Horas de Trabalho"
+from funcionario f 
+inner join departamento dpt
+on f.numero_departamento = dpt.numero_departamento
+inner join projeto p
+on dpt.numero_departamento = p.numero_departamento
+inner join trabalha_em t
+on p.numero_projeto = t.numero_projeto
+where t.horas = 0;
+
+-- 13ª Questão
+
+select concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) "Nome Completo",
+case
+when f.sexo = "M" then "Masculino"
+when f.sexo = "F" then "Feminino"
+end Sexo,
+timestampdiff(year, f.data_nascimento, curdate()) Idade
+from funcionario f
+union
+select concat(d.nome_dependente, ' ', f.nome_meio, ' ', f.ultimo_nome) "Nome Completo",
+case
+when d.sexo = "M" then "Masculino"
+when d.sexo = "F" then "Feminino"
+end Sexo,
+timestampdiff(year, d.data_nascimento, curdate()) Idade
+from dependente d 
+inner join funcionario f
+on d.cpf_funcionario = f.cpf
+order by idade desc;
+
+-- 14ª Questão
+
+select dpt.nome_departamento Departamento, count(f.numero_departamento) "Qtde. de Funcionários"
+from funcionario f
+inner join departamento dpt
+on f.numero_departamento = dpt.numero_departamento
+group by dpt.nome_departamento;
+
+-- 15ª Questão
+
+select distinct concat(f.primeiro_nome, ' ', f.nome_meio, ' ', f.ultimo_nome) "Nome Completo",
+dpt.nome_departamento Departamento, p.nome_projeto Projeto
+from departamento dpt 
+inner join projeto p 
+inner join trabalha_em t 
+inner join funcionario f 
+where dpt.numero_departamento = f.numero_departamento 
+and p.numero_projeto = t.numero_projeto 
+and t.cpf_funcionario = f.cpf
+order by p.nome_projeto desc;
