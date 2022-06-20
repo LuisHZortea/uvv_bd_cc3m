@@ -33,7 +33,7 @@ CREATE TABLE cidade (
                 PRIMARY KEY (codigo)
 );
 
-ALTER TABLE cidade COMMENT 'Tabela que armazena as cidades.';
+ALTER TABLE cidade COMMENT 'Tabela que armazena os dados referentes às cidades.';
 
 ALTER TABLE cidade MODIFY COLUMN codigo INTEGER COMMENT 'PK da tabela. Armazena um código único e exclusivo para cada cidade.';
 
