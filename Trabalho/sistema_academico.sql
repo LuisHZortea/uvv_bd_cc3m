@@ -23,6 +23,7 @@ CREATE TABLE uf (
                 nome VARCHAR(100) NOT NULL,
                 PRIMARY KEY (sigla)
 );
+
 -- Comentários da tabela "uf"
 ALTER TABLE uf COMMENT 'Tabela que armazena as unidades da federação.';
 
@@ -36,6 +37,7 @@ CREATE TABLE cidade (
                 nome VARCHAR(100) NOT NULL,
                 PRIMARY KEY (codigo)
 );
+
 -- Comentários da tabela "cidade"
 ALTER TABLE cidade COMMENT 'Tabela que armazena os dados referentes às cidades.';
 
@@ -49,6 +51,7 @@ CREATE TABLE bairro (
                 nome VARCHAR(100) NOT NULL,
                 PRIMARY KEY (codigo)
 );
+
 -- Comentários da tabela "bairro"
 ALTER TABLE bairro COMMENT 'Tabela que armazena';
 
@@ -61,6 +64,7 @@ CREATE TABLE complemento (
                 complemento VARCHAR(100) NOT NULL,
                 PRIMARY KEY (complemento)
 );
+
 -- Comentários da tabela "complemento"
 ALTER TABLE complemento COMMENT 'Tabela que armazena';
 
@@ -71,6 +75,7 @@ CREATE TABLE numero (
                 numero INT NOT NULL,
                 PRIMARY KEY (numero)
 );
+
 -- Comentários da tabela "numero"
 ALTER TABLE numero COMMENT 'Tabela que armazena';
 
@@ -79,6 +84,7 @@ CREATE TABLE logradouro (
                 logradouro VARCHAR(100) NOT NULL,
                 PRIMARY KEY (logradouro)
 );
+
 -- Comentários da tabela "logradouro"
 ALTER TABLE logradouro COMMENT 'Tabela que armazena o nome da rua, avenida, etc.';
 
@@ -99,6 +105,7 @@ CREATE TABLE pessoas (
                 cep VARCHAR(8) NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa)
 );
+
 -- Comentários da tabela "pessoas"
 ALTER TABLE pessoas COMMENT 'Tabela que armazena';
 
@@ -130,6 +137,7 @@ CREATE TABLE alunos (
                 matricula INT NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa)
 );
+
 -- Comentários da tabela "alunos"
 ALTER TABLE alunos COMMENT 'Tabela que armazena informações sobre os alunos.';
 
@@ -142,6 +150,7 @@ CREATE TABLE professores (
                 codigo_da_pessoa INT NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa)
 );
+
 -- Comentários da tabela "professores"
 ALTER TABLE professores COMMENT 'Tabela que armazena informações sobre os professores.';
 
@@ -156,6 +165,7 @@ CREATE TABLE ofertas (
                 quantidade_maxima_alunos INT NOT NULL,
                 PRIMARY KEY (codigo_da_oferta)
 );
+
 -- Comentários da tabela "ofertas"
 ALTER TABLE ofertas COMMENT 'Tabela que armazena os dados referente as ofertas.';
 
@@ -175,6 +185,7 @@ CREATE TABLE matricula_em (
                 codigo_da_oferta INT NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa, codigo_da_oferta)
 );
+
 -- Comentários da tabela "matricula_em"
 ALTER TABLE matricula_em COMMENT 'Tabela que armazena informações sobre quais alunos se matriculam nas devidas ofertas.';
 
@@ -188,6 +199,7 @@ CREATE TABLE professores_pos_graduacao (
                 diploma VARCHAR(80) NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa, diploma)
 );
+
 -- Comentários da tabela "professores_pos_graduacao"
 ALTER TABLE professores_pos_graduacao COMMENT 'Tabela que armazena as pós-graduações dos professores.';
 
@@ -201,6 +213,7 @@ CREATE TABLE professor_graduacao (
                 diploma VARCHAR(80) NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa, diploma)
 );
+
 -- Comentários da tabela "professor_graduacao"
 ALTER TABLE professor_graduacao COMMENT 'Tabela que armazena as graduações dos professores.';
 
@@ -214,6 +227,7 @@ CREATE TABLE telefones (
                 numero VARCHAR(11) NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa, numero)
 );
+
 -- Comentários da tabela "telefones"
 ALTER TABLE telefones COMMENT 'Tabela que armazena os telefones dos clientes.';
 
@@ -228,6 +242,7 @@ CREATE TABLE cursos (
                 data_de_inicio DATE NOT NULL,
                 PRIMARY KEY (codigo_do_curso)
 );
+
 -- Comentários da tabela "cursos"
 ALTER TABLE cursos COMMENT 'Tabela que armazena informações sobre os cursos.';
 
@@ -243,6 +258,7 @@ CREATE TABLE fazem_em (
                 codigo_do_curso INT NOT NULL,
                 PRIMARY KEY (codigo_da_pessoa, codigo_do_curso)
 );
+
 -- Comentários da tabela "fazem_em"
 ALTER TABLE fazem_em COMMENT 'Tabela que armazena informações de quais cursos os alunos fazem.';
 
@@ -258,6 +274,7 @@ CREATE TABLE obras (
                 tipo VARCHAR(10) NOT NULL CHECK (tipo IN ('livro', 'cd', 'dvd', 'revista')),
                 PRIMARY KEY (codigo_da_obra)
 );
+
 -- Comentários da tabela "obras"
 ALTER TABLE obras COMMENT 'Tabela que armazena as informações referentes às obras.';
 
@@ -277,6 +294,7 @@ CREATE TABLE volumes (
                 codigo_da_obra INT NOT NULL,
                 PRIMARY KEY (codigo_do_volume)
 );
+
 -- Comentários da tabela "volumes"
 ALTER TABLE volumes COMMENT 'Tabela que armazena';
 
@@ -297,6 +315,7 @@ CREATE TABLE emprestimos (
                 data_devolucao DATE NOT NULL,
                 PRIMARY KEY (data_inicio_emprestimo, codigo_do_volume, codigo_da_pessoa)
 );
+
 -- Comentários da tabela "emprestimos"
 ALTER TABLE emprestimos COMMENT 'Tabela que armazena';
 
@@ -318,6 +337,7 @@ CREATE TABLE reservas (
                 data_fim_reserva DATE NOT NULL,
                 PRIMARY KEY (data_inicio_reserva, codigo_da_pessoa, codigo_do_volume)
 );
+
 -- Comentários da tabela "reservas"
 ALTER TABLE reservas COMMENT 'Tabela que armazena';
 
@@ -339,6 +359,7 @@ CREATE TABLE disciplinas (
                 codigo_da_obra INT NOT NULL,
                 PRIMARY KEY (codigo_da_disciplina)
 );
+
 -- Comentários da tabela "disciplinas"
 ALTER TABLE disciplinas COMMENT 'Tabela que armazena os dados referentes às disciplinas.';
 
@@ -360,6 +381,7 @@ CREATE TABLE envolvem_a (
                 codigo_da_disciplina INT NOT NULL,
                 PRIMARY KEY (codigo_da_oferta, codigo_da_disciplina)
 );
+
 -- Comentários da tabela "envolvem_a"
 ALTER TABLE envolvem_a COMMENT 'Tabela que armazena quais ofertas estão relacionadas com as respectivas disciplinas.';
 
@@ -373,6 +395,7 @@ CREATE TABLE compostas_por (
                 codigo_da_disciplina INT NOT NULL,
                 PRIMARY KEY (codigo_do_curso, codigo_da_disciplina)
 );
+
 -- Comentários da tabela "compostas_por"
 ALTER TABLE compostas_por COMMENT 'Tabela que armazena quais disciplinas estão compondo os devidos cursos.';
 
@@ -386,6 +409,7 @@ CREATE TABLE obras_autor (
                 nome_do_autor VARCHAR(50) NOT NULL,
                 PRIMARY KEY (codigo_da_obra)
 );
+
 -- Comentários da tabela "obras_autor"
 ALTER TABLE obras_autor COMMENT 'Tabela que armazena informações sobre os autores das obras.';
 
