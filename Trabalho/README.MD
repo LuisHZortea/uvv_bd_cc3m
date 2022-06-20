@@ -17,7 +17,7 @@
 
 - O objetivo deste trabalho era treinar a aplicação de regras de normalização e boas práticas de modelagem de bancos de dados, durante a elaboração de um projeto lógico a partir de um projeto conceitual previamente definido.
 
-- __Para realizar o trabalho, utilizamos a _Virtual Box_ com o sistema operacional Linux que fora disponibilizada previamente pelo professor Abraantes no site [Computação Raíz](https://www.computacaoraiz.com.br/2022/03/17/maquina-virtual-para-o-estudo-de-sistemas-de-gerenciamento-de-bancos-de-dados-db-server/)__.
+- Para realizar o trabalho, utilizamos a _Virtual Box_ com o sistema operacional Linux que fora disponibilizada previamente pelo professor Abrantes no site [Computação Raíz](https://www.computacaoraiz.com.br/2022/03/17/maquina-virtual-para-o-estudo-de-sistemas-de-gerenciamento-de-bancos-de-dados-db-server/).
 
 - A implementação também foi auxiliada com a criação de um projeto lógico por meio do **SQL Power Architect**, também utilizado previamente.
 
