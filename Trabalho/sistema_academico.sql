@@ -1,3 +1,9 @@
+mysql -u root -p
+computacao@raiz
+
+create database academico;
+use academico;
+
 CREATE TABLE cep (
                 cep VARCHAR(8) NOT NULL,
                 PRIMARY KEY (cep)
@@ -245,7 +251,7 @@ CREATE TABLE obras (
                 codigo_da_obra INT NOT NULL,
                 nome VARCHAR(50) NOT NULL,
                 editora VARCHAR(50) NOT NULL,
-                tipo VARCHAR(10) NOT NULL,
+                tipo VARCHAR(10) NOT NULL CHECK (tipo IN ('livro', 'cd', 'dvd', 'revista')),
                 PRIMARY KEY (codigo_da_obra)
 );
 
