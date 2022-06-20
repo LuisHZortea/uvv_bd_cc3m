@@ -10,3 +10,7 @@
 ## Visão Geral
 
 - O objetivo deste trabalho era treinar a aplicação de regras de normalização e boas práticas de modelagem de bancos de dados, durante a elaboração de um projeto lógico a partir de um projeto conceitual previamente definido.
+
+- O grupo escolheu trabalhar com o projeto de um sistema acadêmico.
+
+![Modelo Conceitual](https://github.com/LuisHZortea/uvv_bd_1_cc1m/blob/main/Trabalho/modelo_conceitual.png)
