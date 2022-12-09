@@ -17,12 +17,12 @@
 
 > - O **_SQL Power Architect_**, previamente mencionando, foi de enorme ajuda, facilitou a criação de tabelas, permitindo inserir as informações necessárias com clareza, como também o relacionamento entre elas, e também a inserção de comentários onde era devido. 
 
-![Projeto Lógico](https://github.com/LuisHZortea/uvv_bd_cc3m/blob/main/BD I - 1º Período/pset1/imgs/ProjetoLógico.png)
+![Projeto Lógico](https://github.com/LuisHZortea/uvv_bd_cc3m/blob/main/BDI-PrimeiroPeriodo/pset1/imgs/ProjetoLógico.png)
 
 > - Além disso, o **_SQL Power Architect_** também possui um função de gerar o script do projeto lógico para a um tipo específico de Sistemas de Gerenciamento de Banco de Dados. Com isso, foi possível fazer a conversão para futuramente implementar no **PostgreSQL** e **MariaDB/MySQL**.
 
-![Conversão PostgreSQL](https://github.com/LuisHZortea/uvv_bd_cc3m/blob/main/BD I - 1º Períodoo/pset1/imgs/ConversãoPostgreSQL.png)
-![Conversão MySQL](https://github.com/LuisHZortea/uvv_bd_cc3m/blob/main/BD I - 1º Período/pset1/imgs/ConversãoMySQL.png)
+![Conversão PostgreSQL](https://github.com/LuisHZortea/uvv_bd_cc3m/blob/main/BDI-PrimeiroPeriodo/pset1/imgs/ConversãoPostgreSQL.png)
+![Conversão MySQL](https://github.com/LuisHZortea/uvv_bd_cc3m/blob/main/BDI-PrimeiroPeriodo/pset1/imgs/ConversãoMySQL.png)
 
 ## Considerações Finais
 
